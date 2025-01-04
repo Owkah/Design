@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahma's Refined spaces</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/about.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  
+</head>
+<body>
+
+    <div class="main-body">
+        <!--  Collapsable Navigation bar -->
+           <nav>
+             <div class="logo">
+               <a href="#"><img src="../photos/logo.jpg" alt="">Where Passion Meets Creativity</a>
+            </div>
+            <toggle class="toggle">
+                <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+            </toggle>
+     
+            <ul class="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="designServices.html">Design Services</a></li>
+                <li><a href="signupLogin.html">Sign Up/Login</a></li>
+                <li><a href="faqs.html">FAQ</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+       
+     <!--About me -->
+            
+           <div class="about-me">
+
+               
+                <div class="about-me">
+                    <img class="my-image" src="../photos/cat.jpg" alt="Kitchen image">
+                </div>
+
+                <div class="vision-container">
+            
+                    <h3 class="vision">Welcome to Rahma's Interior (Where Passion Meets Creativity)!<br><br></h3>
+                    <h3 class="visionOne">
+                      I’m Rahma Mohamed, the creative mind behind designs that transform houses into homes and spaces into stories.<br><br>
+                      I believe every space has the potential to inspire, and my mission is to uncover that potential with designs
+                      that blend beauty, functionality, and your unique style.<br><br>
+      
+                      Whether it’s a cozy nook or a grand makeover, I approach every project with passion, precision, and a touch of
+                      artistry.<br><br>
+                      Together, let’s create spaces that not only look stunning but feel like they were made just for you.<br>
+      
+                      Let’s turn your dreams into designs that inspire!
+                      </h3>
+                  </div>
+               
+           </div>
+      
+        </div>
+
+     
+ 
+      </div>
+     
+     
+   
+</div>
+
+    <!-- Footer -->
+        <footer class="footer-home">
+          <div class="footer-holder">
+              <span class="copyright">&copy; 2024 Rahmas Refined Spaces</span>
+
+              <span>Contact Rahma 804.840.80401</span>
+            </div>
+        </footer>
+
+      <!-- Navigation Collapse JQuery-->
+ 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <script>
+            $(function(){
+                $(".toggle").on("click", function(){
+                    if($(".menu").hasClass("active")){
+                      $(".menu").removeClass("active");
+                      $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+                 }else{
+                      $(".menu").addClass("active");
+                      $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+                  }
+            });
+        });
+      </script>
+    </body>
+     </html>

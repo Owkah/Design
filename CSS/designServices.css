@@ -1,0 +1,269 @@
+/****************************************/
+/* This CSS for  the designServices html file/page */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+body{
+    height: 100vh;
+    background-color: #edede9;
+    font-family: "Poppins", sans-serif ;
+    display: flex;
+    flex-direction: column;}  
+
+.main-body{
+    margin: 3% 4%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;}
+
+a, a:hover{
+    text-decoration: none;}
+
+nav{
+    background: #d6ccc2;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;}
+
+nav .active{
+    color:red;}
+
+nav a{
+    color: #012a4a;}
+
+nav a:hover{
+    color: #ef4b3f;}
+
+.logo{
+    flex: 1;}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 20px;}
+
+.logo a:hover{
+     color: #fff;}
+
+.logo img{
+    width: 70px;
+    height: auto;
+    border-radius: 15%;
+    margin-right: 10px;}
+
+.menu{
+    display:flex;
+    align-items: center;
+    list-style: none;}
+
+.menu li{
+    padding: 15px 10px;
+    font-size: 16px;}
+
+.menu a.active {
+    text-decoration: underline;
+    color: #012a4a;}
+
+.toggle{
+    font-size: 30px;
+    display: none;}
+
+
+    .design{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;}
+
+    .header, .subheader {
+        text-align: center;
+        color: #012a4a;
+        margin-bottom: 20px;}
+     
+     .header {
+        font-size: 2rem;
+        font-weight: 700;
+        padding-top: 3%;}
+     
+     .subheader {
+        font-size: 1.2rem;
+        font-weight: 400;}
+     
+     .offers {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;}
+     
+     .offer-column {
+        background-color: #f8f9fa;
+        padding: 20px; border-radius: 10px;
+        width: 45%; text-align: center;}
+    
+    .offer-column h2 {
+        font-size: 1.5rem;
+        color: #012a4a;
+        margin-bottom: 10px;}
+     
+     .offer-column p {
+        font-size: 1rem;
+        color: #495057;
+        margin-bottom: 20px;} 
+    
+    .book-now { 
+        background-color: #012a4a;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 100%;}
+    
+    .book-now:hover { background-color: #ef4b3f;
+        background-color: #ef4b3f;}
+
+    .contact-us h2.header, .contact-us h3.subheader {
+        text-align: center;
+        color: #012a4a;
+        margin-bottom: 20px;}
+     
+     .form-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;}
+     
+     .form-group {
+        flex: 1; 
+        margin-right: 10px;}
+     
+     .form-group:last-child {
+        margin-right: 0;}
+
+     .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #495057;}
+     
+      .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px; }
+
+    .submit-btn { 
+        width: 100%;
+        padding: 10px;
+         background-color: #012a4a;
+         color: #fff;
+         border: none;
+         border-radius:5px;
+         cursor: pointer;
+         font-size: 1rem;} 
+     
+     .submit-btn:hover { 
+        background-color: #ef4b3f;}
+
+    .service-locations {
+        margin-top: 40px;
+        margin-left: 20px; 
+        margin-right: 20px; 
+        margin-bottom: 40px;} 
+    
+    .locations-table {
+        width: 100%; 
+        border-collapse: collapse;
+        margin-top: 20px; }
+    
+    .locations-table th, .locations-table td {
+         border: 2px solid #ddd; 
+         padding: 8px;
+         text-align: left;}
+     
+     .locations-table th {
+        background-color: #f8f9fa; 
+        color: #012a4a;}
+     
+     .locations-table tr:nth-child(even) {
+        background-color: #f2f2f2;} 
+     
+     .locations-table tr:hover { 
+        background-color: #ddd;}
+
+     .questions-form{
+        padding: 5px 20px;
+        align-items: center;}
+
+      .form-group label{
+        color: #012a4a;
+        font-weight:400;}
+
+      .footer-home{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        background-color: #7f5539;
+        position: sticky;
+        bottom: 0;}
+    
+       .footer-holder{
+        display: flex;
+        gap:33px;
+        color: #fff;
+        justify-content: space-between;}
+    
+
+@media screen and (max-width: 1000px) {
+
+    nav{
+      display: block;
+      position: relative;
+      padding: 15px 20px;}
+
+    .menu{
+       margin-top: 15px;
+       display: none;}
+
+    .menu.active, .toggle{
+        display: block;}
+
+        .toggle {
+            position: absolute;
+            top: 50px;
+            left: 19rem;}      
+
+     .offers {
+        flex-direction: column;
+        align-items: center;}
+     
+     .offer-column {
+        width: 80%;
+        margin-bottom: 20px;}
+
+     .form-row {
+        flex-direction: column;}
+
+     .form-group {
+        margin-right: 0;
+        margin-bottom: 20px;}
+
+     .submit-btn {
+         width: 100%;}
+
+    .offers { 
+        flex-direction: column;
+        align-items: center;}
+    
+    .offer-column {
+        width: 80%;
+        margin-bottom: 20px;}
+
+    .footer-home{
+        font-size: 12px;
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+        padding: 10px 20px;}
+}

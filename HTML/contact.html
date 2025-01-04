@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+    <div class="main-body">
+        <!--  Collapsable Navigation bar -->
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="../photos/logo.jpg" alt="">Where Passion Meets Creativity</a>
+            </div>
+            <toggle class="toggle">
+                <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+            </toggle>
+            <ul class="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="designServices.html">Design Services</a></li>
+                <li><a href="signupLogin.html">Sign Up/Login</a></li>
+                <li><a href="faqs.html">FAQ</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contact Us -->
+         <div class="contact-us">
+             <h2 class="header">At Rahma's Interior (Where Passion Meets Creativity), your journey to a beautifully designed space starts here.
+                 Whether you’re ready to transform your home or have questions about our services, we’re excited to connect with you.</h2>
+             <h3 class="subheader"> Let’s Get Started
+                Fill out the form below, and we’ll take care of the rest: </h3>
+              <form action="#" method="post" id="contactForm">
+                   <div class="form-row"> 
+                    <div class="form-group">
+                         <label for="firstName">First Name</label>
+                          <input type="text" id="firstName" name="firstName" required pattern="[A-Za-z]+" 
+                          title="First name should only contain letters."> 
+                    </div>
+
+                     <div class="form-group">
+                         <label for="lastName">Last Name</label>
+                         <input type="text" id="lastName" name="lastName" required pattern="[A-Za-z]+"
+                          title="Last name should only contain letters.">
+                     </div> </div> <div class="form-row">
+                    
+                     <div class="form-group">
+                         <label for="email">Email</label>
+                          <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                           title="Please enter a valid email address.">
+                     </div>
+
+                     <div class="form-group">
+                         <label for="phone">Phone Number</label>
+                          <input type="tel" id="phone" name="phone" required pattern="\d{10}" 
+                          title="Phone number should be 10 digits.">
+                     </div>
+                     </div>
+                     <div class="form-row">
+                      <button type="submit" class="submit-btn">Submit</button>
+                     </div> 
+                </form>
+             </div>
+             </div>
+
+
+    <!-- Footer -->
+    <footer class="footer-home">
+        <div class="footer-holder">
+            <span class="copyright">&copy; 2024 Rahma's Refined Spaces</span>
+            <span>Contact Rahma 804.840.80401</span>
+        </div>
+    </footer>
+
+    <!-- Navigation Collapse JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $(".toggle").on("click", function(){
+                if($(".menu").hasClass("active")){
+                    $(".menu").removeClass("active");
+                    $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+                } else {
+                    $(".menu").addClass("active");
+                    $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+                }
+            });
+        });
+    </script>
+    <script src="../JavaScript/contact.js"></script>
+</body>
+</html>

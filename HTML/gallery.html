@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/gallery.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+    <div class="main-body">
+        <!--  Collapsable Navigation bar -->
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="../photos/logo.jpg" alt="">Where Passion Meets Creativity</a>
+            </div>
+            <toggle class="toggle">
+                <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+            </toggle>
+            <ul class="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="designServices.html">Design Services</a></li>
+                <li><a href="signupLogin.html">Sign Up/Login</a></li>
+                <li><a href="faqs.html">FAQ</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <h3 class="gallery-text">
+            At Rahma's Interior (Where Passion Meets Creativity), every project is a reflection of our dedication to transforming spaces into works of art.<br>
+            Browse through our gallery to explore a selection of our recent designs—each one thoughtfully curated to bring style, comfort, and function into every room.
+        </h3>
+
+       
+        <!-- Gallery Section -->
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="../photos/design1.jpg" alt="Interior Design 1">
+                <div class="description">A modern, open concept living room designed to create a welcoming, 
+                    functional space. Soft tones and sleek furniture offer a perfect blend of style and comfort for daily living.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../photos/design2.jpg" alt="Interior Design 2">
+                <div class="description">An elegant dining area designed for both intimate family meals and larger gatherings. 
+                    The use of natural light and earthy colors enhances the warm, inviting atmosphere.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../photos/design3.jpg" alt="Interior Design 3">
+                <div class="description">A contemporary home office that inspires productivity. 
+                    This design combines minimalist furniture with personalized accents, creating a space that’s as functional as it is stylish.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../photos/design4.jpg" alt="Interior Design 4">
+                <div class="description">A cozy bedroom retreat with luxurious touches. Soft textures and calming colors make this room the perfect 
+                    escape after a long day.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../photos/design5.jpg" alt="Interior Design 5">
+                <div class="description">A dynamic kitchen remodel featuring bold colors and modern appliances. The layout is designed for both function and visual appeal,
+                     making it the heart of the home.
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="../photos/design6.jpg" alt="Interior Design 6">
+                <div class="description">A sleek, modern bathroom that feels like a spa experience. Clean lines, natural materials, and an open design create 
+                    a serene atmosphere for relaxation.
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="../photos/design7.jpg" alt="Interior Design 7">
+                <div class="description">A beautifully designed entryway that makes a strong first impression. 
+                    Thoughtful touches and stylish accents set the tone for the rest of the home.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../photos/design8.jpg" alt="Interior Design 8">
+                <div class="description">A spacious living room transformation with eclectic design elements that bring personality and charm to the space. 
+                    Perfect for entertaining guests and family.
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="../photos/design9.jpg" alt="Interior Design 9">
+                <div class="description">A bright and airy nursery designed with both aesthetics and functionality in mind. Soft, 
+                    playful colors and cozy furnishings create a nurturing environment for a growing family.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../photos/design10.jpg" alt="Interior Design 10">
+                <div class="description">A chic, urban loft design that blends modern industrial elements with comfort. This design offers a stylish and functional 
+                    space for those who love city living.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+     <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+         <div id="modalDescription"></div>
+     </div>
+
+    <!-- Footer -->
+    <footer class="footer-home">
+        <div class="footer-holder">
+            <span class="copyright">&copy; 2024 Rahma's Refined Spaces</span>
+            <span>Contact Rahma 804.840.80401</span>
+        </div>
+    </footer>
+
+    <!-- Navigation Collapse JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $(".toggle").on("click", function(){
+                if($(".menu").hasClass("active")){
+                    $(".menu").removeClass("active");
+                    $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+                } else {
+                    $(".menu").addClass("active");
+                    $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+                }
+            });
+
+            <!-- Modal functionality -->
+            $(".gallery-item img").on("click", function(){
+                var src = $(this).attr("src");
+                var description = $(this).siblings(".description").text();
+                 $("#modalImage").attr("src", src); $("#modalDescription").text(description);
+                 $("#imageModal").css("display", "block"); });
+                 $(".close").on("click", function(){ $("#imageModal").css("display", "none");
+                    }); 
+                $(window).on("click", function(event){
+                    if ($(event.target).is("#imageModal")) {
+                        $("#imageModal").css("display", "none");
+                     }
+                     });
+        });
+    </script>
+</body>
+</html>

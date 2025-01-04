@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Rahma's Refined Spaces</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/faqs.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+    <div class="main-body">
+        <!--  Collapsable Navigation bar -->
+        <nav>
+            <div class="logo">
+               <a href="index.html"><img src="../photos/logo.jpg" alt="">Where Passion Meets Creativity</a>
+            </div>
+            <toggle class="toggle">
+                <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+            </toggle>
+     
+            <ul class="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="designServices.html">Design Services</a></li>
+                <li><a href="signupLogin.html">Sign Up/Login</a></li>
+                <li><a href="faqs.html">FAQ</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+       
+        <!-- FAQs Content -->
+        <div class="faqs-container">
+            <h1>Frequently Asked Questions</h1>
+            <p>Where Passion Meets Creativity</p>
+            <p>At Rahma’s Interior, every project is a journey, and we’re here to guide you through each step with care, creativity, and a passion for design. Whether you’re looking to refresh a single room or transform your entire space, we’re here to answer your questions and help you get started!</p>
+
+            <h2>1. What’s your design process like?</h2>
+            <p>Our design process is as unique as each space we create. Here’s how we’ll work together to bring your vision to life:</p>
+            <ul>
+                <li><strong>Let’s Dream Together:</strong> We start with an in-depth consultation where we explore your style, needs, and dreams for your space. Whether in person or virtually, this is where the magic begins!</li>
+                <li><strong>Crafting Your Vision:</strong> We then curate a personalized design plan, handpicking colors, textures, layouts, and furniture that will make your space truly shine. Think of it as a roadmap to your dream space.</li>
+                <li><strong>Bringing Ideas to Life:</strong> Once you love the design, we’ll get to work on sourcing materials, managing suppliers, and overseeing every detail. You can sit back and relax as we take care of the heavy lifting.</li>
+                <li><strong>Your Perfect Space, Revealed:</strong> After all the pieces are in place, we’ll do a final reveal. Our goal is for you to feel completely at home in a space that reflects your personality and lifestyle.</li>
+            </ul>
+
+            <h2>2. Do you offer virtual consultations?</h2>
+            <p>Absolutely! We believe in making great design accessible to everyone. Whether you're across town or across the country, we offer virtual consultations to kick-start your design journey. Through video calls, we’ll dive into your design goals and explore ways to create a space that’s uniquely yours.</p>
+
+            <h2>3. How long does a typical design project take?</h2>
+            <p>The timeline for your project depends on the scope of the design, but here’s what you can expect:</p>
+            <ul>
+                <li><strong>Room Transformations:</strong> These can typically be completed within 2-6 weeks, depending on the complexity of the design.</li>
+                <li><strong>Full Home Redesigns:</strong> If you're redesigning your entire home, the timeline can vary, but we’ll work with you to create a timeline that fits your needs and lifestyle. Throughout the process, we’ll keep you updated and ensure everything is running smoothly, on time, and within budget.</li>
+            </ul>
+
+            <h2>4. What are your fees?</h2>
+            <p>Our pricing is as personalized as the spaces we create. We offer customized quotes based on the scale and specifics of your project. After our initial consultation, we’ll provide a detailed, transparent proposal that breaks down the costs so you’ll know exactly what to expect. No surprises, just clear pricing and beautiful designs tailored to your budget.</p>
+
+            <h2>5. Do you offer design packages or specific services?</h2>
+            <p>Yes! We offer a range of design packages and services to suit your needs:</p>
+            <ul>
+                <li><strong>Room Transformations:</strong> Perfect for giving one room—whether it's your bedroom, living room, or office—a fresh, stylish makeover.</li>
+                <li><strong>Complete Home Redesigns:</strong> For those looking to breathe new life into every corner of their home. We’ll create a cohesive design that ties your entire space together.</li>
+                <li><strong>Virtual Design Services:</strong> Need advice or a design concept without an in-person meeting? Our virtual design services give you access to expert guidance and inspiration no matter where you are.</li>
+            </ul>
+
+            <h2>6. Can I incorporate my existing furniture or décor into the design?</h2>
+            <p>Of course! At Rahma’s Interior, we love working with what you already have. Whether it’s a treasured sofa, an antique piece, or a favorite artwork, we’ll creatively incorporate your existing items into the new design. Together, we’ll blend your personal style with fresh design elements to make your space feel completely refreshed yet entirely familiar.</p>
+
+            <h2>7. What makes Rahma’s Interior different from other designers?</h2>
+            <p>At Rahma’s Interior, we don’t just design rooms—we create experiences. We approach every project with passion, creativity, and a deep commitment to understanding your unique style and needs. Our focus is on delivering personalized, functional designs that feel like home. Whether it's through sustainable choices, timeless elegance, or trend-setting designs, we’re dedicated to making every space a true reflection of you.</p>
+
+            <h2>Still Have Questions?</h2>
+            <p>We’d love to hear from you! Whether you’re ready to start your design journey or just want to learn more, feel free to <a href="contact.html">contact us</a>. We’re here to help make your design dreams a reality.</p>
+        </div>
+      
+        <!-- Footer -->
+        <footer class="footer-home" style="padding: 5px 20px;">
+            <div class="footer-holder">
+                <span class="copyright">&copy; 2024 Rahma's Refined Spaces</span>
+                <span>Contact Rahma 804.804.8040</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Navigation Collapse JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $(".toggle").on("click", function(){
+                if($(".menu").hasClass("active")){
+                    $(".menu").removeClass("active");
+                    $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+                } else {
+                    $(".menu").addClass("active");
+                    $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+                }
+            });
+        });
+    </script>
+    <script src="../js/app.js"></script>
+</body>
+</html>

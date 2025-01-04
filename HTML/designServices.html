@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/designServices.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+    <div class="main-body">
+        <!--  Collapsable Navigation bar -->
+           <nav>
+             <div class="logo">
+               <a href="#"><img src="../photos/logo.jpg" alt="">Where Passion Meets Creativity</a>
+            </div>
+            <toggle class="toggle">
+                <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+            </toggle>
+     
+            <ul class="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="designServices.html">Design Services</a></li>
+                <li><a href="signupLogin.html">Sign Up/Login</a></li>
+                <li><a href="faqs.html">FAQ</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+           <!-- Design Services Section -->
+            <div class="design-services">
+                 <h2 class="header">At Rahma's Interior (Where Passion Meets Creativity), we believe that every design tells a story—your story.
+                                   Building on my passion for creating spaces that reflect your unique style and needs, 
+                                   our design services are crafted to bring your vision to life with elegance and functionality.</h2>
+                 <h3 class="subheader">Here’s How We Work Together:</h3>
+            <div class="offers">
+                 <!-- Column one -->
+                   <div class="offer-column">
+                      <h2>In-Person Design Consultations</h2>
+                      <p>For clients who love a personal touch, we’ll meet face-to-face in your space to explore ideas, understand your needs, 
+                        and develop a design that feels like it was made just for you.
+                      </p> 
+                      <!-- <button class="book-now">Book Now</button> -->
+                     </div>
+                     
+                  <!-- Column two -->
+                   <div class="offer-column">
+                     <h2>Virtual Design Consultations</h2>
+                      <p>Perfect for busy schedules or clients outside our local area. Through virtual meetings,
+                         detailed plans, and clear communication, we’ll bring the same level of creativity and dedication to crafting your perfect space.<br>
+                         Whether you’re looking for a small refresh or a complete transformation, we’re here to exceed your expectations. Let’s turn your
+                          dream space into a reality—together.
+                      </p> 
+                        <!--<button class="book-now">Book Now</button> -->
+                     </div>
+                 </div>
+                </div>
+             </div>
+
+            <!-- Countries and Cities we offer our service-->
+            <div class="service-locations">
+               <h2 class="header">Service Locations</h2>
+                <table class="locations-table">
+                   <thead>
+                      <tr> 
+                        <th>Country</th>
+                         <th>State</th>
+                         <th>City</th>
+                       </tr>
+                    </thead>
+                    
+                  <tbody>
+                     <tr>
+                       <td>United States</td>
+                       <td>Virginia</td>
+                       <td>Richmond</td>
+                    </tr>
+                    <tr>
+                        <td>Japan</td>
+                        <td>NA</td>
+                        <td>Tokyo</td>
+                    </tr>
+                    
+                    <tr>
+                         <td>Germany</td>
+                         <td>NA</td>
+                         <td>Berlin</td>
+                     </tr>
+                   </tbody>
+                 </table>
+                </div>
+            </div>
+
+         <!-- Questions Form -->
+<div class="questions-form">
+  <h2 class="header">Have Questions?</h2>
+  <form action="#" method="post">
+      <div class="form-row">
+          <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" required>
+          </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group">
+              <label for="consultationType">Consultation Type</label>
+              <select id="consultationType" name="consultationType" required>
+                  <option value="In-Person">In-Person</option>
+                  <option value="Virtual">Virtual</option>
+              </select>
+          </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group">
+              <label for="question">Question</label>
+              <textarea id="question" name="question" maxlength="200" required
+                        style="width: 300px; height: 150px;"></textarea>
+          </div>
+      </div>
+      <div class="form-row">
+          <button type="submit" class="submit-btn">Submit</button>
+      </div>
+  </form>
+</div>
+
+                
+               </div>  
+
+      
+    <!-- Footer -->
+    <footer class="footer-home">
+      <div class="footer-holder">
+          <span class="copyright">&copy; 2024 Rahmas Refined Spaces</span>
+
+          <span>Contact Rahma 804.840.80401</span>
+        </div>
+    </footer>
+     
+     
+   
+</div>
+
+
+      <!-- Navigation Collapse JQuery-->
+ 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <script>
+            $(function(){
+                $(".toggle").on("click", function(){
+                    if($(".menu").hasClass("active")){
+                      $(".menu").removeClass("active");
+                      $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+                 }else{
+                      $(".menu").addClass("active");
+                      $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+                  }
+            });
+        });
+      </script>
+    </body>
+     </html>

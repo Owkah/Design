@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahma's Refined Spaces</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <style>
+        .welcome img {
+            margin-top: 3%;
+            border-radius: 20%;
+        }
+        .vision {
+            margin-top: 3%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-body">
+        <!--  Collapsable Navigation bar -->
+        <nav>
+            <div class="logo">
+               <a href="#"><img src="../photos/logo.jpg" alt="">Where Passion Meets Creativity</a>
+            </div>
+            <toggle class="toggle">
+                <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+            </toggle>
+     
+            <ul class="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="designServices.html">Design Services</a></li>
+                <li><a href="signupLogin.html">Sign Up/Login</a></li>
+                <li><a href="faqs.html">FAQ</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+             
+                
+            </ul>
+        </nav>
+       
+        <!-- Hero image and welcome -->
+        <div class="welcome">
+            <div class="kitchen">
+                <img class="kitchen-image" src="../photos/hero.jpg" alt="Kitchen image">
+            </div>
+            <div class="intro">  
+                <h3 class="intro-text">Step into a world where your vision becomes reality.</br>At Rahma’s Interior,
+                we don’t just design spaces—we craft experiences. Whether you’re looking to refresh a single
+                room or transform your entire home, we bring your dreams to life with a perfect blend of style, 
+                function, and creativity.</h3></br>
+
+                <h2 class="intro-text"><strong>What We Offer</strong></h2>
+                <h3 class="intro-text">
+                    Personalized In-Person Design Consultations
+                    Experience hands-on collaboration in your space, where every detail is tailored to your needs.</br>
+                    Flexible Virtual Design Consultations
+                    Connect with us from anywhere, and let’s bring your design ideas to life with the same personal touch.
+                </h3></br>
+
+                <h2 class="intro-text"><strong>Why Choose Rahma's Interior?</strong></h2>
+                <h3 class="intro-text">
+                    Passion for Design: We believe every space has a unique story, and we’re here to tell it.</br>
+                    Tailored Solutions: Your vision is our blueprint. Every design is customized to suit your personality and
+                    lifestyle.</br>
+                    Creative Expertise: From conceptualization to execution, we bring both creativity and precision to every
+                    project.</br></br>
+                    Let’s Create Something Beautiful Together. Your perfect space is closer than you think. <br>
+                    Whether you’re here for inspiration or ready to get started,
+                    we’re excited to guide you through the process. 
+                    <br>Take the first step towards a space that’s truly yours.
+                </h3>
+            </div>
+
+            <div class="buttons">
+                <a href="designServices.html"><button class="service-contact">Explore Our Services</button></a>
+                <a href="contact.html"><button class="service-contact">Contact Us</button></a>
+            </div>
+        </div>
+      
+        <!-- Footer -->
+        <footer class="footer-home" style="padding: 5px 20px;">
+            <div class="footer-holder">
+                <span class="copyright">&copy; 2024 Rahma's Refined Spaces</span>
+                <span>Contact Rahma 804.804.8040</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Navigation Collapse JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $(".toggle").on("click", function(){
+                if($(".menu").hasClass("active")){
+                    $(".menu").removeClass("active");
+                    $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+                } else {
+                    $(".menu").addClass("active");
+                    $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+                }
+            });
+        });
+    </script>
+    <script src="../js/app.js"></script>
+</body>
+</html>
