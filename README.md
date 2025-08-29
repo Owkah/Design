@@ -1,3 +1,5 @@
-This is a simple website concept for my wife!
+## Project Overview
 
-HTML, CSS and JavaScript!
+This is a lightweight front-end concept developed for my wife, focusing on clean design and responsive layout.  
+Technologies used: HTML, CSS, JavaScript.
+
